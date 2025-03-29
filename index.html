@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oktató App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Programozási Oktató App</h1>
+    <div id="statusbar">
+      <div>Szint: <span id="level">1</span></div>
+      <div id="xp-bar-container"><div id="xp-bar"></div></div>
+      <div><span id="xp">0</span> / <span id="xp-max">50</span> XP</div>
+    </div>
+    
+<section class="lesson" data-index="1" data-xp="30">
+  <h2>1. projekt: Bemutatkozás</h2>
+  <p>Készíts egy oldalt <h1> és <p> elemekkel!</p>
+  <textarea class="editor" rows="10"><!DOCTYPE html>
+<html>
+  <body>
+    <h1>Anna</h1>
+    <p>Szeretek olvasni.</p>
+  </body>
+</html></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="2" data-xp="30">
+  <h2>2. projekt: Linkgyűjtemény</h2>
+  <p>Hozz létre 3 linket <a> elemmel!</p>
+  <textarea class="editor" rows="10"><a href='#'>Link1</a>
+<a href='#'>Link2</a>
+<a href='#'>Link3</a></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="3" data-xp="30">
+  <h2>3. projekt: Képgaléria</h2>
+  <p>Helyezz el 2 képet <img> elemmel!</p>
+  <textarea class="editor" rows="10"><img src='kep1.jpg'>
+<img src='kep2.jpg'></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="4" data-xp="30">
+  <h2>4. projekt: Listás bevásárlólista</h2>
+  <p>Készíts rendezetlen listát <ul> és <li> elemekkel!</p>
+  <textarea class="editor" rows="10"><ul>
+  <li>Kenyér</li>
+  <li>Tej</li>
+</ul></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="5" data-xp="30">
+  <h2>5. projekt: Egyszerű űrlap</h2>
+  <p>Készíts <form> elemet <input>-tal és <button>-nel!</p>
+  <textarea class="editor" rows="10"><form>
+  <input type='text'>
+  <button>Küldés</button>
+</form></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="6" data-xp="40">
+  <h2>6. projekt: HTML portfólió oldal</h2>
+  <p>Készíts egy HTML portfólió oldalt az eddig tanult elemekkel!</p>
+  <textarea class="editor" rows="10"><!DOCTYPE html>
+<html>
+  <body>
+    <h1>Rólam</h1>
+    <p>Ez az én portfólió oldalam.</p>
+  </body>
+</html></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="7" data-xp="40">
+  <h2>7. projekt: Színezett szöveg</h2>
+  <p>Használj színt és betűméretet CSS-sel!</p>
+  <textarea class="editor" rows="10"><style>
+h1 { color: red; font-size: 32px; }
+</style>
+<h1>Színes szöveg</h1></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="8" data-xp="40">
+  <h2>8. projekt: Középre igazított fejléc</h2>
+  <p>Igazítsd középre a címet CSS-sel!</p>
+  <textarea class="editor" rows="10"><style>
+h1 { text-align: center; }
+</style>
+<h1>Középen</h1></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="9" data-xp="40">
+  <h2>9. projekt: Szegélyes doboz</h2>
+  <p>Adj szegélyt és belső margót egy doboznak!</p>
+  <textarea class="editor" rows="10"><style>
+div { border: 1px solid black; padding: 10px; }
+</style>
+<div>Szegélyes doboz</div></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="10" data-xp="40">
+  <h2>10. projekt: Flexbox alap elrendezés</h2>
+  <p>Hozz létre 2 egymás melletti elemet Flexbox segítségével!</p>
+  <textarea class="editor" rows="10"><style>
+.container { display: flex; }
+.box { width: 50%; }
+</style>
+<div class='container'><div class='box'>1</div><div class='box'>2</div></div></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="11" data-xp="40">
+  <h2>11. projekt: Stílusos gomb</h2>
+  <p>Stílusozz meg egy gombot CSS-sel és adj hozzá hover effektet!</p>
+  <textarea class="editor" rows="10"><style>
+button { background: blue; color: white; padding: 10px; }
+button:hover { background: darkblue; }
+</style>
+<button>Kattints</button></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="12" data-xp="40">
+  <h2>12. projekt: Egyszerű layout</h2>
+  <p>Hozz létre fejlécet, tartalmat és láblécet!</p>
+  <textarea class="editor" rows="10"><header>Fejléc</header>
+<main>Tartalom</main>
+<footer>Lábléc</footer></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="13" data-xp="40">
+  <h2>13. projekt: CSS portfólió oldal</h2>
+  <p>Alkalmazz stílusokat egy HTML portfólió oldalra!</p>
+  <textarea class="editor" rows="10"><style>
+h1 { color: purple; }
+</style>
+<h1>Portfólió</h1></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="14" data-xp="50">
+  <h2>14. projekt: Gombkattintás JS-sel</h2>
+  <p>Írj JS-t, ami gombra kattintva szöveget ír ki!</p>
+  <textarea class="editor" rows="10"><button onclick="document.getElementById('out').textContent='Helló!'">Katt</button>
+<p id='out'></p></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="15" data-xp="50">
+  <h2>15. projekt: Számoló gomb</h2>
+  <p>Kattintásra növeld a számot!</p>
+  <textarea class="editor" rows="10"><button onclick="count()">+</button>
+<p id='num'>0</p>
+<script>
+let n = 0;
+function count() {
+  n++;
+  document.getElementById('num').textContent = n;
+}
+</script></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="16" data-xp="50">
+  <h2>16. projekt: Űrlap beküldése</h2>
+  <p>Űrlap beküldésekor írj ki szöveget JS-ben!</p>
+  <textarea class="editor" rows="10"><form onsubmit="event.preventDefault(); document.getElementById('res').textContent='Küldve';">
+<input><button>Küld</button></form>
+<p id='res'></p></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="17" data-xp="50">
+  <h2>17. projekt: Egyszerű kalkulátor</h2>
+  <p>Készíts két mezőt és egy összeadó gombot!</p>
+  <textarea class="editor" rows="10"><input id='a'><input id='b'><button onclick="calc()">=</button>
+<p id='res'></p>
+<script>
+function calc() {
+let x=+a.value, y=+b.value;
+res.textContent=x+y;
+}
+</script></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="18" data-xp="50">
+  <h2>18. projekt: Sötét/világos mód váltó</h2>
+  <p>Gombra kattintva váltson a háttér színe!</p>
+  <textarea class="editor" rows="10"><button onclick="document.body.classList.toggle('dark')">Váltás</button>
+<style>.dark { background: black; color: white; }</style></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="19" data-xp="50">
+  <h2>19. projekt: Interaktív kérdőív</h2>
+  <p>Kérdezz meg valamit, majd írd ki a választ!</p>
+  <textarea class="editor" rows="10"><input id='q'><button onclick="ans()">Ok</button>
+<p id='out'></p>
+<script>
+function ans() {
+out.textContent = q.value;
+}</script></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+<section class="lesson" data-index="20" data-xp="60">
+  <h2>20. projekt: JS portfólió oldal</h2>
+  <p>Készíts interaktív HTML oldalt JS-sel!</p>
+  <textarea class="editor" rows="10"><button onclick="alert('Üdv!')">Kattints rám</button></textarea>
+  <iframe class="preview"></iframe>
+  <button class="checkBtn">Ellenőrzés</button>
+  <button class="downloadBtn">HTML letöltése</button>
+  <button class="nextBtn" disabled>Tovább</button>
+</section>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
